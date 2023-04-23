@@ -1,0 +1,97 @@
+.description {
+  max-height: 4em;
+  overflow: hidden;
+  display: block;
+}
+
+.showmore .description {
+  overflow: visible;
+  display: inline;
+}
+
+.showBtn {
+  margin-top: 1em;
+  border: dashed var(--primary);
+  background-color: inherit;
+  float: right;
+  /* background-color: var(--primary); */
+  color: var(--primary);
+}
+
+.showBtn:hover {
+  border: dashed white;
+}
+
+.product-overlay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.product-overlay ul {
+  list-style: none;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: 15px;
+  padding: 0;
+}
+
+.productInfoTitlew {
+  color: var(--primary) !important;
+}
+
+.basket {
+  width: 1.5em;
+  fill: rgb(240, 255, 243) !important;
+  color: aliceblue;
+}
+
+.product-overlay .btn-lg-square {
+  background-color: whitesmoke;
+}
+
+.product-overlay .btn-lg-square:hover {
+  background-color: var(--primary);
+}
+
+/* modal */
+.backdrop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,10 +1,11 @@
 /********** Template CSS **********/
 @import url(product.css);
 :root {
-  --primary: #eaa636;
+  --primary: #1b8f11;
   --secondary: #545454;
   --light: #fdf5eb;
   --dark: #1e1916;
+  --primary-hover: #20a314;
 }
 
 h4,

@@ -4,9 +4,6 @@ const productList = document.querySelector(".g-4");
 const modal = document.querySelector(".backdrop");
 const buyBTN = document.querySelector(".btn");
 
-console.log(modal);
-console.log(buyBTN);
-
 productList.addEventListener("click", (e) => {
   console.log(e.target);
 
@@ -23,4 +20,9 @@ productList.addEventListener("click", (e) => {
   }
 });
 
-// modal
+buyBTN.addEventListener("click", onBuyBTN);
+
+function onBuyBTN(e) {
+  e.preventdefault();
+  console.log("dataset");
+}

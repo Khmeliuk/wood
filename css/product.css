@@ -70,47 +70,68 @@
   font-family: Open Sans;
 }
 
-/* modal */
-.backdrop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 999; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  display: block;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* feedback */
 .feedbackImg {
   width: 100% !important;
   height: auto !important;
+  border-radius: 1rem;
+}
+
+.testimonial-item {
+  border-radius: 1rem;
+}
+
+/* buy */
+.mainContainer {
+  padding: 8rem 4rem;
+}
+.nain {
+  width: 100%;
+  height: 100%;
+  background-color: chartreuse;
+  opacity: 0.7;
+  display: flex;
+  gap: 2rem;
+}
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  padding: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.leftPart {
+  flex: 50%;
+  padding: 2rem;
+}
+
+.orderImh {
+  width: 100%;
+}
+
+.buy {
+  background-color: green;
+  background-image: url(../img/about-1.jpg);
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }

@@ -97,6 +97,35 @@
   opacity: 0.7;
   display: flex;
   gap: 2rem;
+  border: thick double var(--primary);
+  border-radius: 3rem;
+
+  animation: 1s ease 0s normal forwards 1 fadeInUpCustom;
+}
+
+@keyframes fadeInUpCustom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 0.7;
+    transform: none;
+  }
+}
+
+.opacityUp {
+}
+@keyframes nain {
+  0% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .rightPart {
@@ -134,4 +163,32 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.maintext {
+  color: black;
+  font-family: Open Sans;
+  padding: 0;
+  margin: 0;
+}
+
+.productTitle {
+  color: black;
+  font-family: Open Sans;
+  text-align: center;
+}
+
+.buyPrice {
+  color: tomato;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.buyInput {
+  background-color: aquamarine;
+  border-radius: 2rem;
+  padding-left: 1rem;
 }

@@ -127,26 +127,50 @@
     <!-- main -->
     <div class="buy">
       <div class="container-xxl mainContainer">
-        <div class="nain">
+        <div class="nain wow fadeInUpCustom" data-wow-delay="0.3s">
           <div class="leftPart">
-            <h2>Сковорода «Садж» з диску борони 50 см.</h2>
-            <span>ціна:1405 грн.</span>
+            <h2 class="productTitle">Сковорода «Садж» з диску борони 50 см.</h2>
+            <span class="buyPrice">1405 грн.</span>
 
-            <h4 class="productInfoTitlew">В комплект входить</h4>
-            <p class="">
-              ніжки - 1 м, ніжки - 26 см, т-подібні ручки, підставка для вогню
+            <h4 class="productTitle">В комплект входить</h4>
+            <p class="maintext">
+              Ніжки - 1 м, ніжки - 26 см, т-подібні ручки, підставка для вогню
               40 см, 3 ланцюжки для підставки
             </p>
-            <h4>ДОДАТКОВО</h4>
+            <h4 class="productTitle">ДОДАТКОВО</h4>
             <ul>
-              <li><p>Кришка -275 грн</p></li>
-              <li><p>Кришка з нержавіючої сталі: 400 грн</p></li>
-              <li><p>Чохол з армійського брезенту: 325 грн</p></li>
-              <li><p>Гравіювання на кришку</p></li>
-              <li><p>Друк на чохол</p></li>
+              <li>
+                <p class="maintext">
+                  <i class="fa fa-check text-primary me-2"></i>Кришка -275 грн
+                </p>
+              </li>
+              <li>
+                <p class="maintext">
+                  <i class="fa fa-check text-primary me-2"></i>Кришка з
+                  нержавіючої сталі: 400 грн
+                </p>
+              </li>
+              <li>
+                <p class="maintext">
+                  <i class="fa fa-check text-primary me-2"></i>Чохол з
+                  армійського брезенту: 325 грн
+                </p>
+              </li>
+              <li>
+                <p class="maintext">
+                  <i class="fa fa-check text-primary me-2"></i>Гравіювання на
+                  кришку
+                </p>
+              </li>
+              <li>
+                <p class="maintext">
+                  <i class="fa fa-check text-primary me-2"></i>Друк на чохол
+                </p>
+              </li>
             </ul>
           </div>
           <div class="rightPart">
+            <h3 class="productTitle">Оформити замовлення</h3>
             <form
               action="https://formspree.io/f/mlekzrgd"
               method="POST"
@@ -154,25 +178,47 @@
             >
               <input type="hidden" name="_language" value="uk" />
               <label class="label" for="name"
-                ><span>name</span>
-                <input id="name" type="text" name="name" required
+                ><span> <p class="maintext">Ім'я</p></span>
+                <input
+                  class="buyInput"
+                  id="name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Введіть ваше ім'я"
               /></label>
 
               <label class="label">
-                Your email:
-                <input type="email" name="email" />
+                <p class="maintext">email:</p>
+                <input
+                  class="buyInput"
+                  type="email"
+                  name="email"
+                  placeholder="Введіть ваш email"
+                />
               </label>
 
-              <label class="label"
-                >Номер телефону
-                <input type="tel" name="phone" required />
+              <label class="label">
+                <p class="maintext">Телефон</p>
+                <input
+                  class="buyInput"
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="-38-xxx-xxxx-xxx"
+                />
               </label>
 
-              <p>Додадково:</p>
+              <h3 class="productTitle">Додадково:</h3>
 
               <div class="option">
                 <label>
-                  <input name="option" type="checkbox" value="Кришка" />Кришка
+                  <input
+                    class="buyInput"
+                    name="option"
+                    type="checkbox"
+                    value="Кришка"
+                  />Кришка
                 </label>
                 <label>
                   <input
@@ -204,11 +250,16 @@
                 </label>
               </div>
               <label class="label">
-                Your message:
-                <textarea name="message"></textarea>
+                <p class="maintext">Додаткові побажання :</p>
+                <textarea class="buyInput" name="message"></textarea>
               </label>
 
-              <button type="submit">Send</button>
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill py-3 px-5"
+              >
+                Замовити
+              </button>
             </form>
           </div>
         </div>

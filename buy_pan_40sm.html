@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Baker - Bakery Website Template</title>
+    <title>GRILL LAZER</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -258,7 +258,9 @@
                 <h3 class="productTitle">Додадково:</h3>
                 <label class="maintext">
                   <input
-                    class="buyInput"
+                    data-price="275"
+                    data-action="save"
+                    class="buyInput js-Cover"
                     name="option"
                     type="checkbox"
                     value="Кришка"
@@ -266,7 +268,8 @@
                 </label>
                 <label class="maintext">
                   <input
-                    class="buyInput"
+                    data-price="400"
+                    class="buyInput js-steelCover"
                     type="checkbox"
                     name="option"
                     value="Кришка з нержавіючої сталі "
@@ -274,15 +277,9 @@
                 </label>
                 <label class="maintext">
                   <input
-                    class="buyInput"
-                    type="checkbox"
-                    name="option"
-                    value="Чохол з армійського брезенту "
-                  />Чохол
-                </label>
-                <label class="maintext">
-                  <input
-                    class="buyInput"
+                    disabled
+                    data-price="300"
+                    class="buyInput js-coverEngraving"
                     type="checkbox"
                     name="option"
                     value="Гравіювання на кришку"
@@ -290,7 +287,19 @@
                 >
                 <label class="maintext">
                   <input
-                    class="buyInput"
+                    data-price="325"
+                    class="buyInput js-case"
+                    type="checkbox"
+                    name="option"
+                    value="Чохол з армійського брезенту "
+                  />Чохол
+                </label>
+
+                <label class="maintext">
+                  <input
+                    disabled
+                    data-price="125"
+                    class="buyInput js-case-print"
                     type="checkbox"
                     name="option"
                     value="Друк на чохол"
@@ -300,7 +309,6 @@
 
               <div class="input-container ic1">
                 <textarea
-                  required
                   name="Додатково"
                   id="Additional"
                   class="input"
@@ -313,7 +321,7 @@
                 >
               </div>
 
-              <span class="buyPriceTootal">1405 грн.</span>
+              <span name="price" class="buyPriceTotal">1405 грн.</span>
 
               <button
                 type="submit"
@@ -464,6 +472,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/buy.js" type="module"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

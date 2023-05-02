@@ -101,6 +101,19 @@
   box-shadow: -32px 21px 27px -22px rgba(0, 0, 0, 0.57);
 }
 
+.footer .fab {
+  font-size: 2rem;
+}
+
+.footer .d-flex {
+  gap: 1rem;
+}
+
+.footerItem {
+  text-align: center;
+  justify-content: center;
+}
+
 /* feedback */
 .feedbackImg {
   width: 100% !important;
@@ -291,12 +304,29 @@
   width: 76px;
 }
 
+.cutLg {
+  background-color: #fdf5eb;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 200px;
+}
+
 .cut-short {
   width: 50px;
 }
 
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.input:focus ~ .cutLg,
+.input:not(:placeholder-shown) ~ .cutLg {
   transform: translateY(8px);
 }
 

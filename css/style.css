@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 @import url(product.css);
 :root {
-  --primary: #1b8f11;
+  --primary: #175611;
   --secondary: #545454;
   --light: #fdf5eb;
   --dark: #1e1916;
@@ -100,7 +100,7 @@ ul {
 }
 
 .navbar .navbar-nav .nav-link {
-  padding: 35px 15px;
+  padding: 20px 15px;
   color: var(--light);
   outline: none;
 }

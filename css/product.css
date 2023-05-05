@@ -2,6 +2,7 @@
   max-height: 4em;
   overflow: hidden;
   display: block;
+  font-size: 0.75rem;
 }
 
 .showmore .description {
@@ -14,7 +15,6 @@
   border: dashed var(--primary);
   background-color: inherit;
   float: right;
-  /* background-color: var(--primary); */
   color: var(--primary);
 }
 
@@ -50,7 +50,7 @@
 }
 
 .productInfoTitlew {
-  color: var(--primary) !important;
+  color: var(--primary-hover) !important;
 }
 
 .orderBtn {
@@ -86,19 +86,46 @@
   border: solid 0.2rem;
 }
 
-.product-item h4 {
-  font-family: Open Sans;
+.secondBuyBtn {
+  margin: auto;
+  display: none;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  height: 48px;
 }
 
-.footer {
+.firstBuyBtn {
   display: flex;
-  justify-content: space-between;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  height: 48px;
+}
+
+.product-item h4 {
+  font-family: Open Sans;
 }
 
 .shadowCustom {
   -webkit-box-shadow: -32px 21px 27px -22px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: -32px 21px 27px -22px rgba(0, 0, 0, 0.57);
   box-shadow: -32px 21px 27px -22px rgba(0, 0, 0, 0.57);
+}
+
+/* footer */
+
+.footer .logo {
+  width: 10rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer .fab {
@@ -109,9 +136,38 @@
   gap: 1rem;
 }
 
+.footerItems {
+  display: flex;
+  width: 75%;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
 .footerItem {
-  text-align: center;
-  justify-content: center;
+  flex: 1;
+}
+
+.footerSocial {
+  display: flex;
+}
+
+.footersingleItem {
+  text-align: justify;
+}
+
+.foterGallary {
+  width: 25%;
+}
+
+.footerContact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex: 2;
+}
+
+.footerTitle {
+  color: var(--light);
 }
 
 /* feedback */
@@ -196,9 +252,32 @@
   width: 100%;
 }
 
-.buy {
-  background-color: green;
-  background-image: url(../img/about-1.jpg);
+.buy_sadj50 {
+  background-color: var(--primary);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/products/pan_sadj_50.jpg);
+  background-size: cover;
+}
+
+.buy_sadj40 {
+  background-color: var(--primary);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/products/pan_sadj-40.jpg);
+  background-size: cover;
+}
+
+.buy_pan50 {
+  background-color: var(--primary);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/products/pan_50.jpg);
+  background-size: cover;
+}
+
+.buy_pan40 {
+  background-color: var(--primary);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/products/pan_40.jpg);
+  background-size: cover;
 }
 .label {
   display: flex;
@@ -249,6 +328,11 @@
   border-radius: 1rem;
   padding: 0rem 1.5rem;
   margin: auto;
+  width: 10rem;
+}
+
+.priceLabel {
+  text-align: center;
 }
 
 .buyInput {
@@ -264,7 +348,7 @@
   }
 }
 
-/* custom */
+/* custom form */
 
 .input-container {
   height: 50px;
@@ -355,16 +439,79 @@
   color: #dc2f55;
 }
 
-/* sniper */
+/* gallary */
+/* .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
+.gallery a {
+  flex: 18%;
+  max-width: 25%;
+} */
+
+.gallery img {
+  width: 95%;
+  height: auto;
+}
+
+.galleryTitle {
+  text-align: center;
+}
+
+/* swiper */
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 480px;
+  height: 640px;
 }
 
 .swiper-slide {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.swiper-wrapper {
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
 }

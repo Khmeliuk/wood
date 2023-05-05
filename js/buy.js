@@ -9,7 +9,7 @@ const refs = {
   form: document.querySelector(".form"),
 };
 
-const totalValue = Number.parseInt(refs.totalPrice.textContent);
+const totalValue = Number.parseInt(refs.totalPrice.value);
 
 refs.option.addEventListener("click", onOptionClick);
 
@@ -53,7 +53,9 @@ function refreshPrice(price) {
       total = Number.parseInt(total) + Number.parseInt(element.dataset.price);
     }
   });
-  refs.totalPrice.textContent = "";
-  refs.totalPrice.textContent = total + " грн.";
+  refs.totalPrice.value = "";
+  refs.totalPrice.value = total + " грн.";
 }
 refs.form.reset();
+
+console.log(refs.totalPrice.value);

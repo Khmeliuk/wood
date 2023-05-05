@@ -65,13 +65,13 @@
           <small>Follow us:</small>
           <div class="h-100 d-inline-flex align-items-center">
             <a
-              class="btn-lg-square text-primary border-end rounded-0"
+              class="btn-lg-square text-light rounded-0"
               href="https://www.facebook.com/people/%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%B8-%D0%97%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0/pfbid0fjp5de1TXZiGNZp2w3MZx8hrYY2PemSBCcD18BhaBZ6oqKaSV4iLLctKBAZPnpqyl/"
               ><i class="fab fa-facebook-f"></i
             ></a>
 
             <a
-              class="btn-lg-square text-primary pe-0"
+              class="btn-lg-square text-light pe-0"
               href="https://www.instagram.com/woodd_products/?igshid=YmMyMTA2M2Y%3D"
               ><i class="fab fa-instagram"></i
             ></a>
@@ -96,7 +96,7 @@
         data-bs-toggle="collapse"
         data-bs-target="#navbarCollapse"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">"</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto p-4 p-lg-0">
@@ -113,7 +113,7 @@
           <div
             class="flex-shrink-0 btn-lg-square border border-light rounded-circle"
           >
-            <i class="fa fa-phone text-primary"></i>
+            <i class="fa fa-phone text-light"></i>
           </div>
           <div class="ps-3">
             <small class="text-light mb-0">Телефон</small>
@@ -125,26 +125,19 @@
     <!-- Navbar End -->
 
     <!-- main -->
-    <div class="buy wow fadeInUpCustom" data-wow-delay="0.1s">
+    <div class="buy_pan50 wow fadeInUpCustom" data-wow-delay="0.1s">
       <div class="container-xxl mainContainer">
         <div class="main">
           <div class="leftPart">
             <div>
-              <h2 class="productTitle">
-                Сковорода «Садж» з диску борони 50 см.
-              </h2>
-              <span class="buyPrice">1405 грн.</span>
+              <h2 class="productTitle">Сковорода диску борони 50 см.</h2>
+              <span class="buyPrice">775 грн.</span>
             </div>
 
             <div>
               <h4 class="productTitle">В комплект входить</h4>
 
               <ul>
-                <li>
-                  <p class="maintext">
-                    <i class="fa fa-check text-primary me-2"></i>Ніжки - 1 м
-                  </p>
-                </li>
                 <li>
                   <p class="maintext">
                     <i class="fa fa-check text-primary me-2"></i>ніжки - 26 см
@@ -154,18 +147,6 @@
                   <p class="maintext">
                     <i class="fa fa-check text-primary me-2"></i>Чт-подібні
                     ручки
-                  </p>
-                </li>
-                <li>
-                  <p class="maintext">
-                    <i class="fa fa-check text-primary me-2"></i>підставка для
-                    вогню 40 см
-                  </p>
-                </li>
-                <li>
-                  <p class="maintext">
-                    <i class="fa fa-check text-primary me-2"></i>3 ланцюжки для
-                    підставки
                   </p>
                 </li>
               </ul>
@@ -182,7 +163,7 @@
                 <li>
                   <p class="maintext">
                     <i class="fa fa-check text-primary me-2"></i>Кришка з
-                    нержавіючої сталі: 400 грн
+                    нержавіючої сталі: 460 грн
                   </p>
                 </li>
                 <li>
@@ -215,7 +196,7 @@
               <input
                 type="hidden"
                 name="product"
-                value=" Сковорода «Садж» з диску борони 50 см."
+                value=" Сковорода  диску борони 50 см."
               />
 
               <div class="input-container ic1">
@@ -225,7 +206,9 @@
                   id="name"
                   class="input"
                   type="text"
+                  title="Допускається лише букви, пропуски та -"
                   placeholder=" "
+                  pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                 />
                 <div class="cut"></div>
                 <label for="name" class="placeholder">Ваще ім'я</label>
@@ -238,6 +221,8 @@
                   id="tel"
                   class="input"
                   type="text"
+                  title="Номер телефону може складатися з цифр та може включати пропуски, тире, круглі дужки і починатися з +"
+                  pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                   placeholder=" "
                 />
                 <div class="cut"></div>
@@ -273,7 +258,7 @@
                 </label>
                 <label class="maintext">
                   <input
-                    data-price="400"
+                    data-price="460"
                     class="buyInput js-steelCover"
                     type="checkbox"
                     name="option"
@@ -326,7 +311,17 @@
                 >
               </div>
 
-              <span name="price" class="buyPriceTotal">1405 грн.</span>
+              <label class="maintext priceLabel" title="totalPrice">
+                <input
+                  name="totalPrice"
+                  title="totalPrice"
+                  readonly
+                  class="buyInput js-case-print buyPriceTotal"
+                  type="text"
+                  name="option"
+                  value="775 грн."
+                />
+              </label>
 
               <button
                 type="submit"
@@ -350,49 +345,49 @@
     >
       <div class="container py-3">
         <div class="row footer">
-          <div class="col-lg-3 col-md-6 mb-3 footerItem">
-            <a href="index.html" class="navbar-brand mms-lg-0">
-              <!-- <h1 class="text-primary m-0">GRILL LAZER</h1> -->
-              <img
-                src="./img/logo/logopng.png"
-                alt="GRILL LAZER"
-                class="logo"
-              />
-            </a>
-            <!-- <h4 class="text-light mb-4">Office Address</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
-            </p> -->
-          </div>
+          <div class="footerItems">
+            <div class="col-lg-3 col-md-6 mb-3 footerItem mt-4">
+              <a href="index.html" class="navbar-brand mms-lg-0">
+                <img
+                  src="./img/logo/logopng.png"
+                  alt="GRILL LAZER"
+                  class="logo"
+                />
+              </a>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footerItem">
-            <h4 class="text-light mb-4">Наші контакти</h4>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+380666270233
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
-            </p>
-          </div>
+            <div class="footerContact">
+              <div class="footerItem">
+                <h4 class="footerTitle">Наші контакти</h4>
+                <div class="footersingleItem">
+                  <p class="mb-2 footerText">
+                    <i class="fa fa-phone-alt me-3"></i>+380666270233
+                  </p>
+                  <p class="mb-2 footerText">
+                    <i class="fa fa-envelope me-3"></i>info@example.com
+                  </p>
+                </div>
+              </div>
 
-          <div class="col-lg-4 col-md-6 footerItem">
-            <h4 class="text-light mb-4">Соцмережі</h4>
-            <div class="d-flex pt-2 mb-4 footerItem">
-              <a
-                class="btn-lg-square text-light rounded-0"
-                href="https://www.facebook.com/people/%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%B8-%D0%97%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0/pfbid0fjp5de1TXZiGNZp2w3MZx8hrYY2PemSBCcD18BhaBZ6oqKaSV4iLLctKBAZPnpqyl/"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
+              <div class="footerItem">
+                <h4 class="footerTitle">Соцмережі</h4>
+                <div class="footerSocial">
+                  <a
+                    class="btn-lg-square text-light rounded-0"
+                    href="https://www.facebook.com/people/%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%B8-%D0%97%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%B0/pfbid0fjp5de1TXZiGNZp2w3MZx8hrYY2PemSBCcD18BhaBZ6oqKaSV4iLLctKBAZPnpqyl/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
 
-              <a
-                class="btn-lg-square text-light pe-0"
-                href="https://www.instagram.com/woodd_products/?igshid=YmMyMTA2M2Y%3D"
-                ><i class="fab fa-instagram"></i
-              ></a>
+                  <a
+                    class="btn-lg-square text-light pe-0"
+                    href="https://www.instagram.com/woodd_products/?igshid=YmMyMTA2M2Y%3D"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footerItem">
+          <div class="col-lg-2 col-md-6 foterGallary">
             <div class="row g-2">
               <div class="col-4">
                 <img

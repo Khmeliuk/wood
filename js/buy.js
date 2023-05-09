@@ -7,9 +7,10 @@ const refs = {
   coverEngraving: document.querySelector(".js-coverEngraving"),
   totalPrice: document.querySelector(".buyPriceTotal"),
   form: document.querySelector(".form"),
+  coverMarking: document.querySelector(".js-coverMarking"),
 };
 
-const totalValue = Number.parseInt(refs.totalPrice.value);
+let totalValue = Number.parseInt(refs.totalPrice.value);
 
 refs.option.addEventListener("click", onOptionClick);
 
@@ -30,8 +31,8 @@ function onOptionClick(e) {
       break;
 
     case refs.steelCover:
-      refs.coverEngraving.disabled = !refs.steelCover.checked;
-      refs.coverEngraving.checked = false;
+      refs.coverMarking.disabled = !refs.steelCover.checked;
+      refs.coverMarking.checked = false;
       refreshPrice(totalValue);
       break;
     case refs.coverEngraving:
@@ -56,6 +57,14 @@ function refreshPrice(price) {
   refs.totalPrice.value = "";
   refs.totalPrice.value = total + " грн.";
 }
-refs.form.reset();
+
+function reset() {
+  refs.form.reset();
+  refs.coverMarking.disabled = true;
+  refs.casePrint.disabled = true;
+  refs.coverEngraving.disabled = true;
+  totalValue = Number.parseInt(refs.totalPrice.value);
+}
+reset();
 
 console.log(refs.totalPrice.value);

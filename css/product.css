@@ -5,6 +5,18 @@
   font-size: 0.75rem;
 }
 
+.img-fluid {
+  width: 100%;
+}
+
+.serviceIcon {
+  width: 50%;
+}
+
+.serviceIcon2 {
+  width: 50%;
+}
+
 .showmore .description {
   overflow: visible;
   display: inline;
@@ -438,18 +450,6 @@
 .input:focus ~ .placeholder {
   color: #dc2f55;
 }
-
-/* gallary */
-/* .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.gallery a {
-  flex: 18%;
-  max-width: 25%;
-} */
 
 .gallery img {
   width: 95%;

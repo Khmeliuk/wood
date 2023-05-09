@@ -206,14 +206,18 @@ ul {
   }
 }
 
-/* @media (max-width: 480px) {
-  .secondBuyBtn {
-    display: flex;
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
   }
-  .firstBuyBtn {
-    display: none;
+  .footerItems {
+    width: 100%;
   }
-} */
+  .foterGallary {
+    width: 100%;
+  }
+}
 .header-carousel .owl-nav {
   position: relative;
   width: 80px;
@@ -452,3 +456,34 @@ ul {
 .copyright a:hover {
   color: var(--light);
 }
+
+
+
+
+
+
+
+
+
+
+ <picture>
+            <source
+              srcset=""
+              media="(max-width: 480px)"
+              sizes="(min-width: 480px) 480px, 100vw"
+            />
+            <source
+              srcset=""
+              media="(min-width: 768px)"
+              sizes="(min-width: 800px) 800px, 100vw"
+            />
+            <source
+              srcset=""
+              media="(min-width: 1024px)"
+              sizes="(min-width: 1024px) 1024px, 100vw"
+            />
+            <img
+              src=""
+              alt="сковорода з  диску борони"
+            />
+          </picture>

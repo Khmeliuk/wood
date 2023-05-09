@@ -199,6 +199,9 @@ ul {
   .footerText {
     font-size: 12px;
   }
+  .footer .logo {
+    width: 100%;
+  }
   /* swiper */
   .swiper {
     width: 240px;
@@ -456,34 +459,3 @@ ul {
 .copyright a:hover {
   color: var(--light);
 }
-
-
-
-
-
-
-
-
-
-
- <picture>
-            <source
-              srcset=""
-              media="(max-width: 480px)"
-              sizes="(min-width: 480px) 480px, 100vw"
-            />
-            <source
-              srcset=""
-              media="(min-width: 768px)"
-              sizes="(min-width: 800px) 800px, 100vw"
-            />
-            <source
-              srcset=""
-              media="(min-width: 1024px)"
-              sizes="(min-width: 1024px) 1024px, 100vw"
-            />
-            <img
-              src=""
-              alt="сковорода з  диску борони"
-            />
-          </picture>

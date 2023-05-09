@@ -412,6 +412,18 @@
   width: 200px;
 }
 
+.cutMd {
+  background-color: #fdf5eb;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 120px;
+}
+
 .cut-short {
   width: 50px;
 }
@@ -422,6 +434,11 @@
 }
 
 .input:focus ~ .cutLg,
+.input:not(:placeholder-shown) ~ .cutLg {
+  transform: translateY(8px);
+}
+
+.input:focus ~ .cutMd,
 .input:not(:placeholder-shown) ~ .cutLg {
   transform: translateY(8px);
 }

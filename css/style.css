@@ -200,25 +200,41 @@ ul {
     font-size: 12px;
   }
   .footer .logo {
+  }
+  .footerText {
+    display: flex;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footerItems {
     width: 100%;
+  }
+
+  .footerContact {
+    flex: none;
   }
   /* swiper */
   .swiper {
     width: 240px;
     height: 320px;
   }
+  .foterGallary {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-  .footer {
-    flex-direction: column;
-    gap: 1rem;
+  .footerContact {
+    flex-wrap: nowrap;
   }
-  .footerItems {
-    width: 100%;
-  }
-  .foterGallary {
-    width: 100%;
+
+  .footer .logo {
+    max-height: 60px;
+    width: auto;
   }
 }
 .header-carousel .owl-nav {

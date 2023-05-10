@@ -354,16 +354,30 @@
       class="container-fluid bg-dark text-light footer mb-0 wow fadeIn"
       data-wow-delay="0.1s"
     >
-      <div class="container py-3">
+      <div class="container py-5">
         <div class="row footer">
           <div class="footerItems">
-            <div class="col-lg-3 col-md-6 mb-3 footerItem mt-4">
+            <div class="footerItem">
               <a href="index.html" class="navbar-brand mms-lg-0">
-                <img
-                  src="./img/logo/logopng.png"
-                  alt="GRILL LAZER"
-                  class="logo"
-                />
+                <picture class="logo">
+                  <source
+                    srcset="img\logo\logomini.png"
+                    media="(max-width: 480px)"
+                    sizes="(min-width: 480px) 480px, 100vw"
+                  />
+                  <source
+                    srcset="img/logo/logopng.png"
+                    media="(min-width:
+                  768px)"
+                    sizes="(min-width: 800px) 800px, 100vw"
+                  />
+
+                  <img
+                    class="logo"
+                    src="img/logo/logopng.png"
+                    alt="сковорідка на вогні"
+                  />
+                </picture>
               </a>
             </div>
 

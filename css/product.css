@@ -138,6 +138,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  gap: rem;
+  flex-wrap: nowrap;
 }
 
 .footer .fab {
@@ -156,7 +158,6 @@
 }
 
 .footerItem {
-  flex: 1;
 }
 
 .footerSocial {
@@ -173,9 +174,12 @@
 
 .footerContact {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  flex: 2;
+}
+
+.footerText {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .footerTitle {

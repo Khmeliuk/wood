@@ -14,8 +14,6 @@ let totalValue = Number.parseInt(refs.totalPrice.value);
 
 refs.option.addEventListener("click", onOptionClick);
 
-console.log(refs.cover.dataset.price);
-
 function onOptionClick(e) {
   switch (e.target) {
     case refs.case:
@@ -33,6 +31,9 @@ function onOptionClick(e) {
     case refs.steelCover:
       refs.coverMarking.disabled = !refs.steelCover.checked;
       refs.coverMarking.checked = false;
+      refreshPrice(totalValue);
+      break;
+    case refs.coverMarking:
       refreshPrice(totalValue);
       break;
     case refs.coverEngraving:
@@ -66,5 +67,3 @@ function reset() {
   totalValue = Number.parseInt(refs.totalPrice.value);
 }
 reset();
-
-console.log(refs.totalPrice.value);
